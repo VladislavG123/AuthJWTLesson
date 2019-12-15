@@ -45,5 +45,31 @@ namespace AuthJWTLesson.Controllers
 
             return Ok(new { token });
         }
+
+
+        public async Task<IActionResult> Registrate(AuthDTO authDTO)
+        {
+            /*
+             1. принимаем в параметрах объект с данными пользователя (DTO)
+             2. обращаемся к сервису который проводит аутендификацию
+             3. получаем от сервиса токен 
+                а) если токин пуст - кидаем 401
+                б) если всё ок возвращаем токен в объекте
+             */
+
+            if (!ModelState.IsValid)
+            {
+                return BadRequest();
+            }
+
+            var token = await authService.Registrate(authDTO.Username, authDTO.Password);
+
+            if (String.IsNullOrEmpty(token))
+            {
+                return Unauthorized();
+            }
+
+            return Ok(new { token });
+        }
     }
 }

@@ -32,7 +32,7 @@ namespace AuthJWTLesson
         {
             services.Configure<SecretOptions>(configuration.GetSection("Secrets"));
             
-            services.AddDbContext<DataAccess.AppContext>(options => options.UseSqlServer(configuration.GetConnectionString("AuthConnectionString")));
+            services.AddDbContext<DataAccess.AppContext>(options => options.UseNpgsql(configuration.GetConnectionString("AuthConnectionString")));
             services.AddTransient<AuthService>();
 
 

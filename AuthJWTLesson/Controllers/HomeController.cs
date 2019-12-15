@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AuthJWTLesson.Services;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -13,10 +14,19 @@ namespace AuthJWTLesson.Controllers
     [Authorize]
     public class HomeController : ControllerBase
     {
-        [HttpGet]
-        public IActionResult GetSecoreInfo()
+        private readonly AuthService authService;
+
+        public HomeController(AuthService authService)
         {
-            return Ok(new { data = "всё ок" });
+            this.authService = authService;
+        }
+
+        [HttpGet]
+        public IActionResult GetSecoreInfo(string token)
+        {
+           var data = authService.DecryptToken(token);
+
+            return Ok(new { data });
         }
     }
 }

@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace AuthJWTLesson.DataAccess
 {
-    public class AppContext :DbContext
+    public class AppContext : DbContext
     {
         public AppContext(DbContextOptions options) : base(options)
         {
@@ -15,8 +15,8 @@ namespace AuthJWTLesson.DataAccess
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<User>().HasData(new User 
-            { 
+            modelBuilder.Entity<User>().HasData(new User
+            {
                 Username = "Volodya89",
                 Password = "123123"
             });
@@ -25,7 +25,6 @@ namespace AuthJWTLesson.DataAccess
              Migrations
          1) Nuget: entity tools, entity design
          2) Add-Migration Initial
-         3) 
          
          */
     }

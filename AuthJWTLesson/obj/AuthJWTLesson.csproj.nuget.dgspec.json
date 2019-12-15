@@ -1,27 +1,33 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\гороховв\\source\\repos\\AuthJWTLesson\\AuthJWTLesson\\AuthJWTLesson.csproj": {}
+    "C:\\Users\\Vlad\\Source\\Repos\\AuthJWTLesson\\AuthJWTLesson\\AuthJWTLesson.csproj": {}
   },
   "projects": {
-    "C:\\Users\\гороховв\\source\\repos\\AuthJWTLesson\\AuthJWTLesson\\AuthJWTLesson.csproj": {
+    "C:\\Users\\Vlad\\Source\\Repos\\AuthJWTLesson\\AuthJWTLesson\\AuthJWTLesson.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\гороховв\\source\\repos\\AuthJWTLesson\\AuthJWTLesson\\AuthJWTLesson.csproj",
+        "projectUniqueName": "C:\\Users\\Vlad\\Source\\Repos\\AuthJWTLesson\\AuthJWTLesson\\AuthJWTLesson.csproj",
         "projectName": "AuthJWTLesson",
-        "projectPath": "C:\\Users\\гороховв\\source\\repos\\AuthJWTLesson\\AuthJWTLesson\\AuthJWTLesson.csproj",
-        "packagesPath": "C:\\Users\\гороховв\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\гороховв\\source\\repos\\AuthJWTLesson\\AuthJWTLesson\\obj\\",
+        "projectPath": "C:\\Users\\Vlad\\Source\\Repos\\AuthJWTLesson\\AuthJWTLesson\\AuthJWTLesson.csproj",
+        "packagesPath": "C:\\Users\\Vlad\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Vlad\\Source\\Repos\\AuthJWTLesson\\AuthJWTLesson\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\гороховв\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Vlad\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://nuget.timpotze.nl/api/v2/": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -44,31 +50,35 @@
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[3.0.1, )"
+              "version": "[3.1.0, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[3.0.1, )"
+              "version": "[3.1.0, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[3.0.1, )"
+              "version": "[3.1.0, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[3.0.1, )"
+              "version": "[3.1.0, )"
             },
             "Microsoft.Extensions.Logging.Debug": {
               "target": "Package",
-              "version": "[3.0.0, )"
+              "version": "[3.1.0, )"
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
-              "version": "[3.0.0, )"
+              "version": "[3.1.0, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[3.1.0, )"
             }
           },
           "imports": [
